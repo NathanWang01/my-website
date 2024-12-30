@@ -1,0 +1,179 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lora', serif;
+    background-color: #f9f9f9;
+}
+
+/* Flexbox Container for Centering */
+.landing-page {
+    display: flex;               /* Enables Flexbox */
+    flex-direction: column;      /* Stack items vertically */
+    justify-content: center;     /* Centers items vertically */
+    align-items: center;         /* Centers items horizontally */
+    width: 100%;
+    height: 100vh;               /* Use full viewport height */
+    text-align: center;
+}
+
+/* Circle */
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #A9A9A9;      /* Gray border */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     /* Centers text inside the circle */
+    align-items: center;
+    margin-bottom: 20px;         /* Spacing below the circle */
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Button */
+.enter-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    border: 1px solid #333;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.enter-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Main Page Styles */
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url('assets/cross2.jpg'); /* Matches landing page background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333; /* Consistent text color */
+}
+
+.link-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;       /* Centers the list horizontally */
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;     /* Center items horizontally */
+    gap: 10px;               /* Space between items */
+    max-width: 90%;          /* Ensure the list is responsive */
+    width: 100%;             /* Allow the list to expand */
+}
+
+.link-list li {
+    width: 100%; /* Ensures all items take the same width */
+    max-width: 300px; /* Adjust as needed for your layout */
+    display: inline-block; /* Ensures proper spacing for text */
+    overflow: hidden; /* Prevents overflow if the text is too long */
+    text-overflow: ellipsis; /* Adds an ellipsis (...) if text overflows */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+}
+
+.link-list a {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #007BFF;          /* Link color */
+    line-height: 1.5;        /* Adjusts spacing between lines */
+    word-wrap: break-word;   /* Ensures long words wrap to the next line */
+    white-space: normal;     /* Allows text to wrap naturally */
+    text-align: center;      /* Centers the text inside each link */
+    display: block;          /* Makes the entire link clickable */
+    padding: 5px 0;          /* Adds spacing for better readability */
+}
+
+.link-list a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Content Page Styles */
+.content-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+
+    /* Background Image Styling */
+    background-image: url('../assets/cross.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #333; /* Text color to contrast the background */
+    padding: 20px;
+}
+
+.content-page h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+audio {
+    margin: 20px 0;
+}
+
+.content-page h2 {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.content-page p {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left; /* Align text to the left for readability */
+    max-width: 600px; /* Limits the width of the transcript text */
+    margin: 0 auto;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    border: 1px solid #f0f8ff;
+    background-color: transparent;
+    color: #DAA520;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #333;
+    color: #fff;
+}
